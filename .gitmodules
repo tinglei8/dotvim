@@ -1,0 +1,27 @@
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/vim-scripts/vim-json-bundle.git
+[submodule "bundle/vim-proto"]
+	path = bundle/vim-proto
+	url = https://github.com/brandonbloom/vim-proto.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/vim-actionscript"]
+	path = bundle/vim-actionscript
+	url = https://github.com/jeroenbourgois/vim-actionscript.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
