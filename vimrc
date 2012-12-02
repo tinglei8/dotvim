@@ -91,7 +91,11 @@ endif " has("autocmd")
  
 "设置Java代码的自动补全
 au FileType java setlocal omnifunc=javacomplete#Complete
- 
+au FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+au FileType css setlocal omnifunc=csscomplete#CompleteCSS
+"au FileType ruby setlocal omnifunc=rubycomplete#Complete
+
 let mapleader = "."
 imap <leader>; <C-X><C-O>
  
@@ -260,3 +264,11 @@ map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+set wildignore=*.class
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '[\/]\.(git|hg|svn)$',
+  \ 'file': '\.(exe|so|dll|class)$',
+  \ 'link': '',
+  \ }
